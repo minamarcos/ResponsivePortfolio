@@ -1,3 +1,23 @@
+.btn-menu {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all .5s ease-out; }
+  .btn-menu .btn-line {
+    width: 35px;
+    height: 3px;
+    margin: 0px 0px 5px 0px;
+    background: #fff;
+    transition: all .5s ease-out; }
+  .btn-menu.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); }
+  .btn-menu.close .btn-line:nth-child(2) {
+    opacity: 0; }
+  .btn-menu.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px); }
+
 * {
   box-sizing: border-box; }
 
@@ -5,10 +25,10 @@ body {
   background-color: #444;
   color: #fff;
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-image {
-    background: url(../img/mainHome2.jpg);
+    background: url(../img/mainHome.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: 0px -190px; }
@@ -35,7 +55,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: .2rem 1rem;
+    padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
 a {
@@ -56,10 +76,10 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: .4rem; }
+      padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 1.5s ease-out; }
+        transition: all .5s ease-out; }
   main#home {
     overflow: hidden; }
   main h1 {
