@@ -10,7 +10,7 @@
         width: 35px;
         height: 3px;
         margin: 0px 0px 5px 0px;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easOut;
     }
 
@@ -116,6 +116,7 @@
         position: relative;
         text-transform: none;
         padding: 1rem 0px;
+        color: set-text-color($primary-color);
 
         &:hover {
             color: $secondary-color;
