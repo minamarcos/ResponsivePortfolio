@@ -1,7 +1,6 @@
 {
   "name": "minamarcosportfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "homepage": "https://minamarcos.github.io/ResponsivePortfolio",
   "scripts": {
@@ -13,6 +12,17 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "i": "^0.3.6",
-    "node-sass": "^4.9.4"
-  }
+    "node": "^11.1.0",
+    "node-sass": "^4.10.0",
+    "sass": "^1.15.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minamarcos/ResponsivePortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minamarcos/ResponsivePortfolio/issues"
+  },
+  "description": ""
 }

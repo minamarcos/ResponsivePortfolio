@@ -61,6 +61,15 @@ main {
                 color: $secondary-color;
                 @include easOut();
             }
+
+            li {
+                color: black;
+
+                &:hover {
+                    color: $secondary-color;
+                    @include easOut();
+                }
+            }
         }
     }
 

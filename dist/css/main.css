@@ -146,6 +146,11 @@ main {
       main .icons a:hover {
         color: #eece1a;
         transition: all .5s ease-out; }
+      main .icons a li {
+        color: black; }
+        main .icons a li:hover {
+          color: #eece1a;
+          transition: all .5s ease-out; }
   main#home {
     overflow: hidden; }
   main h1 {
