@@ -1,126 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>View My Work</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>View My Work</title>
-</head>
+  <body id="">
+    <div class="overlay"></div>
 
-<body id="">
-  <div class="overlay"></div>
-
-  <header>
-    <div class="btn-menu">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+    <header>
+      <div class="btn-menu">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item "><a class="nav-links " href="/">Home</a></li>
-        <li class="nav-item current">
-          <a class="nav-links" href="work.html">My Work / Projects</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-links" href="about.html">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-links" href="ContactMe.html">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item "><a class="nav-links " href="/">Home</a></li>
+          <li class="nav-item current">
+            <a class="nav-links" href="work.html">My Work / Projects</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-links" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-links" href="ContactMe.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="projects">
-    <h1 class="lg-heading">
-      About <span class="text-secondary">My Projects</span>
-    </h1>
-    <h2 class="sm-heading">Take a look at my projects</h2>
-    <div class="projects">
-      <div class="item">
-        <a target="_new" href="/projects/bookmarker/"><img src="img/bookmarker.PNG" alt="" /></a>
-        <span>HTML local storage, ES6, Arrow Functions</span>
-        <a target="_new" href="/projects/bookmarker/" class="btn-light"><i class="fas fa-eye"></i> Project - bookmarker
-        </a>
-        <a target="_new" href="https://github.com/minamarcos/bookmarker-JS" class="btn-dark"><i class="fab fa-github"></i>
-          Github</a>
-      </div>
-      <div class="item">
-        <a target="_new" href="/projects/StaticChartTopPopulation/StaticChartTopPopulation.html"><img src="img/jsChart.PNG"
-            alt="" /></a>
-        <span>Chart.JS, ES6, Arrow Functions</span>
-        <a target="_new" href="/projects/StaticChartTopPopulation/StaticChartTopPopulation.html" class="btn-light"><i
-            class="fas fa-eye"></i> Project - Chart.JS
-        </a>
-        <a target="_new" href="https://github.com/minamarcos/Chart.JS-TopPopulation" class="btn-dark"><i class="fab fa-github"></i>
-          Github</a>
-      </div>
-      <div class="item">
-        <a target="_new" href="/projects/MobileFirstTempleate/MobileFirstTempleate.html"><img src="img/MobileFirstTempleate.PNG"
-            alt="" /></a>
-        <span>Mobile First Approach, CssGrid</span>
-        <a target="_new" href="/projects/MobileFirstTempleate/MobileFirstTempleate.html" class="btn-light"><i class="fas fa-eye"></i>
-          Project -
-          Mobile
-          First Single Page
-        </a>
-        <a target="_new" href="https://github.com/minamarcos/MobileFirstCssGrid" class="btn-dark"><i class="fab fa-github"></i>
-          Github</a>
-      </div>
-      <div class="item">
-        <a target="_new" href="/projects/SingleBootstrapPage"><img src="img/singleBootstrap.PNG" alt="" /></a>
-        <span>SinglePage Bootstrap 4 , CssGrid</span>
-        <a target="_new" href="/projects/SingleBootstrapPage" class="btn-light"><i class="fas fa-eye"></i>
-          Project -
-          Mobile
-          First Single Page
-        </a>
-        <a target="_new" href="https://github.com/minamarcos/SingleBootstrapPage" class="btn-dark"><i class="fab fa-github"></i>
-          Github</a>
-      </div>
+    <main id="projects">
+      <h1 class="lg-heading">
+        About <span class="text-secondary">My Projects</span>
+      </h1>
+      <h2 class="sm-heading">Take a look at my projects</h2>
+      <div class="container">
+        <div class="row">
+          <div id="mainCards">
+            <div class="card-columns">
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/ash.png"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ash Taxes</h5>
+                  <a target="_new" href="http://ashtaxes.com/" class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                </div>
+              </div>
 
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/bookmarker.PNG"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bookmarker</h5>
+                  <p>HTML:Local Storage,Bootstrap 4</p>
+                  <a
+                    target="_new"
+                    href="/projects/bookmarker/"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <a
+                    target="_new"
+                    href="https://github.com/minamarcos/bookmarker-JS"
+                    class="btn-dark"
+                  >
+                    <i class="fab fa-github"></i> Github</a
+                  >
+                </div>
+              </div>
 
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/Egypt.PNG"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Visit Egypt</h5>
+                  <p>BootStrap 4</p>
+                  <a
+                    target="_new"
+                    href="http://minamarcos.net/projects/GoogleMapsAPIMarkPopup/"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <!-- <a target="_new" href="#!" class="btn-dark">
+                        <i class="fab fa-github"></i> Github</a
+                      > -->
+                </div>
+              </div>
 
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/gc-rentals.png"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Guitar Center Rentals</h5>
+                  <a
+                    target="_new"
+                    href="https://www.guitarcenter.com/Services/Rentals"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <!-- <a target="_new" href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github</a
+                  > -->
+                </div>
+              </div>
 
-      <div class="item">
-        <a target="_new" href="https://www.guitarcenter.com/pages/careers"><img src="img/project1.JPG" alt="" /></a>
-        <a target="_new" href="https://www.guitarcenter.com/pages/careers" class="btn-light"><i class="fas fa-eye"></i>
-          Project</a>
-        <a target="_new" href="#!" class="btn-dark"><i class="fab fa-github"></i> Github</a>
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/jsChart.PNG"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Static Chart Top Population</h5>
+                  <a
+                    target="_new"
+                    href="/projects/StaticChartTopPopulation/StaticChartTopPopulation.html"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <a
+                    target="_new"
+                    href="https://github.com/minamarcos/Chart.JS-TopPopulation"
+                    class="btn-dark"
+                  >
+                    <i class="fab fa-github"></i> Github</a
+                  >
+                </div>
+              </div>
+
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/GCFinancing.png"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Guitar Center Financing Offers</h5>
+                  <a
+                    target="_new"
+                    href="https://www.guitarcenter.com/Special-Financing-Offers.gc"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <!-- <a target="_new" href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github</a
+                  > -->
+                </div>
+              </div>
+
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/singleBootstrap.PNG"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Single Bootstrap Page</h5>
+                  <a
+                    target="_new"
+                    href="/projects/SingleBootstrapPage"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <a
+                    target="_new"
+                    href="https://github.com/minamarcos/SingleBootstrapPage"
+                    class="btn-dark"
+                  >
+                    <i class="fab fa-github"></i> Github</a
+                  >
+                </div>
+              </div>
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/MobileFirstTempleate.PNG"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mobile First Templeate</h5>
+                  <a
+                    target="_new"
+                    href="/projects/MobileFirstTempleate/MobileFirstTempleate.html"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <a
+                    target="_new"
+                    href="https://github.com/minamarcos/MobileFirstCssGrid"
+                    class="btn-dark"
+                  >
+                    <i class="fab fa-github"></i> Github</a
+                  >
+                </div>
+              </div>
+
+              <div class="card" data-hoverdelay="" data-hover-delay="500">
+                <img
+                  class="card-img-top"
+                  alt="Inventory Valuation and Analysis"
+                  src="img/gc-repairs.png"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Repairs</h5>
+                  <a
+                    target="_new"
+                    href="https://www.guitarcenter.com/Special-Financing-Offers.gc"
+                    class="btn-light"
+                    ><i class="fas fa-eye"></i> Project</a
+                  >
+                  <a target="_new" href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github</a
+                  >
+                </div>
+                <div class="card" data-hoverdelay="" data-hover-delay="500">
+                  <img
+                    class="card-img-top"
+                    alt="Inventory Valuation and Analysis"
+                    src="img/project1.JPG"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Center Careers Page</h5>
+                    <a
+                      target="_new"
+                      href="https://www.guitarcenter.com/pages/careers"
+                      class="btn-light"
+                      ><i class="fas fa-eye"></i> Project</a
+                    >
+                    <a target="_new" href="#!" class="btn-dark">
+                      <i class="fab fa-github"></i> Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <a target="_new" href="https://www.guitarcenter.com/Services/Rentals"><img src="img/gc-rentals.png" alt="" /></a>
-        <a target="_new" href="https://www.guitarcenter.com/Services/Rentals" class="btn-light"><i class="fas fa-eye"></i>
-          Project</a>
-        <a target="_new" href="#!" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="item">
-        <a target="_new" href="https://www.guitarcenter.com/Services/Repairs.gc"><img src="img/gc-repairs.png" alt="" /></a>
+    </main>
+    <footer id="main-footer">Mina Marcos - Copyright &copy; 2018</footer>
+    <script>
+      var cards = document.querySelectorAll("#mainCards .card");
 
-        <a target="_new" href="https://www.guitarcenter.com/Services/Repairs.gc" class="btn-light"><i class="fas fa-eye"></i>
-          Project</a>
-        <a target="_new" href="#!" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-      <div class="item">
-        <a target="_new" href="https://www.guitarcenter.com/Special-Financing-Offers.gc"><img src="img/gc-financing-card.jpg"
-            alt="" /></a>
+      var delayArray = [500, 1000, 2000, 2500];
 
-        <a target="_new" href="https://www.guitarcenter.com/Special-Financing-Offers.gc" class="btn-light"><i class="fas fa-eye"></i>
-          Project</a>
-        <a target="_new" href="#!" class="btn-dark"><i class="fab fa-github"></i> Github</a>
-      </div>
-    </div>
-  </main>
-  <footer id="main-footer">Mina Marcos - Copyright &copy; 2018</footer>
-  <script src="js/main.js"></script>
-</body>
-
+      cards.forEach(card => {
+        var elementDelayValue =
+          delayArray[Math.floor(Math.random() * delayArray.length)];
+        card.dataset.hoverDelay = elementDelayValue;
+        setTimeout(function() {
+          card.classList.add("hover");
+        }, elementDelayValue);
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
