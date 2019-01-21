@@ -11,7 +11,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .card-columns {
-    column-count: 2;
+    column-count: 3;
   }
 }
 
@@ -24,6 +24,9 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+    }
+    .card-columns {
+      column-count: 2;
     }
   }
 
