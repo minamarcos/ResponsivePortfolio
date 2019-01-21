@@ -211,6 +211,11 @@ main {
   opacity: 1;
   transition: 0.9s; }
 
+.card-body p {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 5px; }
+
 .card-title {
   margin-bottom: 0.75rem;
   font-size: 1rem;
@@ -255,7 +260,8 @@ main {
 
 .btn-light {
   background: #c4c4c4;
-  color: #333333; }
+  color: #333333;
+  margin-top: 15px; }
 
 #main-footer {
   text-align: center;
@@ -281,8 +287,16 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .card-columns .card {
+      display: inline-block; }
     main .card-columns {
       column-count: 2; }
+    main .card-title {
+      line-height: 1.2rem;
+      font-weight: 900; }
+    main .card-body p {
+      font-size: 0.5rem;
+      margin-bottom: 0.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
