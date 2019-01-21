@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all .5s ease-out; }
+  transition: all 0.5s ease-out; }
   .btn-menu .btn-line {
     width: 35px;
     height: 3px;
     margin: 0px 0px 5px 0px;
     background: #ffffff;
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
   .btn-menu.close .btn-line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px); }
   .btn-menu.close .btn-line:nth-child(2) {
@@ -41,13 +41,13 @@
     background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
     transform: translate3d(0, 100%, 0);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -60,14 +60,14 @@
       border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all .5s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #eece1a; }
   .menu .nav-links {
     font-size: 3rem;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
     position: relative;
     text-transform: none;
     padding: 1rem 0px;
@@ -99,7 +99,7 @@ body {
     background-size: cover;
     background-position: 0px -190px; }
     body#bg-image:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -134,7 +134,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #eece1a !important; }
 
 main {
   padding: 4rem;
@@ -145,12 +145,12 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all .5s ease-out; }
+        transition: all 0.5s ease-out; }
       main .icons a li {
         color: black; }
         main .icons a li:hover {
           color: #eece1a;
-          transition: all .5s ease-out; }
+          transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
   main h1 {
@@ -196,7 +196,7 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border: 3px #eece1a solid;
-      transition: all .5s ease-out; }
+      transition: all 0.5s ease-out; }
 
 #mainCards .card-img-top {
   opacity: 0.5; }
@@ -229,7 +229,7 @@ main {
     padding: 1.5rem 2.5rem;
     border: 3px solid #ffffff;
     cursor: pointer;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
     margin: 1rem 0px; }
     .boxes div:hover {
       color: #000000;
@@ -270,7 +270,9 @@ main {
 
 @media screen and (max-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .card-columns {
+    column-count: 3; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -279,6 +281,8 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main .card-columns {
+      column-count: 2; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -297,7 +301,7 @@ main {
     width: 17vh;
     height: 17vh; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
